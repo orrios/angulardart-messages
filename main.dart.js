@@ -10063,7 +10063,7 @@ c8:function(){var z=0,y=P.d6([P.f,D.aB]),x,w=2,v,u=[],t=this,s,r,q,p,o,n
 var $async$c8=P.d9(function(a,b){if(a===1){v=b
 z=w}while(true)switch(z){case 0:w=4
 z=7
-return P.cC(t.a.iH("GET","http://localhost:8888/messages",null),$async$c8)
+return P.cC(t.a.iH("GET","http://35.237.99.182/messages",null),$async$c8)
 case 7:s=b
 p=H.d(s,"$isc6")
 r=J.fV(H.vv(C.B.aR(0,B.km(U.jO(p.e).c.a.i(0,"charset"),C.h).aR(0,p.x))),new K.of(),D.aB).aK(0)
@@ -10097,7 +10097,7 @@ n=C.B.bo(P.ae(["content",b],o,o))
 m=P.ae(["content-type","application/json"],o,o)
 p.toString
 z=7
-return P.cC(p.bO("POST","http://localhost:8888/messages",H.o(m,"$isv",[o,o],"$asv"),n,null),$async$j)
+return P.cC(p.bO("POST","http://35.237.99.182/messages",H.o(m,"$isv",[o,o],"$asv"),n,null),$async$j)
 case 7:s=d
 P.e3(J.b_(s))
 n=H.d(s,"$isc6")
