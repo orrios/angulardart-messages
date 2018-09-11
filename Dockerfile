@@ -1,4 +1,6 @@
-FROM google/dartWORKDIR /app
+FROM google/dart
+
+WORKDIR /app
 
 ADD pubspec.* /app/
 RUN pub get --no-precompile
