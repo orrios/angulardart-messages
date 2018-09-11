@@ -1,0 +1,33 @@
+table {
+  table-layout: fixed;
+  width: 100%;
+}
+
+table td {
+  word-wrap: break-word;
+  overflow-wrap: break-word;  
+}
+
+tr {
+  line-height: 3em;
+  vertical-align: middle;
+}
+
+tr:hover {
+  background-color: #EEEEEE;
+}
+
+tr material-checkbox {
+  vertical-align: middle;
+}
+
+tr material-fab {
+  float: right;
+  vertical-align: middle;
+}
+td {
+  margin: 0px;
+}
+.done {
+  text-decoration: line-through;
+}

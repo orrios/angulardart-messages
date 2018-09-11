@@ -1,0 +1,31 @@
+<!-- Components info: https://webdev.dartlang.org/components -->
+<div>
+  <material-input label="Send a message"
+                  autoFocus floatingLabel style="width:80%"
+                  [(ngModel)]="newMessage"
+                  (keyup.enter)="add()">
+  </material-input>
+
+  <material-fab mini raised
+                (trigger)="add()"
+                [disabled]="newMessage.isEmpty">
+    <material-icon icon="add"></material-icon>
+  </material-fab>
+</div>
+
+<p *ngIf="items.isEmpty">
+  Nothing to do! Add a message above.
+</p>
+
+<div *ngIf="items.isNotEmpty">
+  <table style="width:100%">
+    <tr>
+      <th>Content</th>
+      <th>ip</th>
+    </tr>
+    <tr *ngFor="let item of items; let i=index">
+      <td>{{item.content}}</td>
+      <td>{{item.ip}}</td>
+    </tr>
+  </table>
+</div>
