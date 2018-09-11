@@ -11,7 +11,7 @@ import '../message.dart';
 class MessageListService {
   static final _headers = {'Content-Type': 'application/json'};
   static const _messagesUrl =
-      'http://localhost:8888/messages'; // URL to web API
+      'http://35.237.99.182/messages'; // URL to web API
   final Client _http;
 
   MessageListService(this._http);
